@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Developer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+ 
+  <nav class="navbar">
+    <a href="#" class="logo">MyPortfolio</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home">
+    <div class="home-content">
+      <h1>Hello, I'm Akshat Sharma.</h1>
+      <h2>Frontend Developer</h2>
+      <pre>➡️ I create beautiful, responsive, and user-friendly websites using HTML and CSS and currently learning ⌨️JavaScript.
+
+➡️From:- Kanpur, Uttar Pradesh.
+
+➡️My age:- 20yrs.
+
+➡️Email:-akshat2410184@akgec.ac.in
+        
+      </pre>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+    <div class="profile-img">
+      <img src="portimg.jpg" alt="Profile Photo">
+    </div>
+  </section>
+
+ 
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        
+        <h3>⌨️HTML</h3>
+        <p>Semantic markup, accessibility, and modern HTML features.</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-css3-alt"></i>
+        <h3>⌨️CSS</h3>
+        <p>Responsive design, Flexbox, Grid, and CSS animations.</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-js"></i>
+        <h3>⌨️JavaScript</h3>
+        <p>ES6+, DOM manipulation, and modern JS frameworks.</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-react"></i>
+        <h3>⌨️React</h3>
+        <p>Component-based architecture, hooks, and state management.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="achievements">
+    <h2 class="section-title">My Achievements</h2>
+    <div class="achievements-container">
+      <div class="achievement-box">
+       
+        <h3>Award for Kho-Kho 2023</h3>
+        <p>Received for getting first place in Inter School Competition and I was MVP from my team. </p>
+      </div>
+      <div class="achievement-box">
+       
+        <h3>Frontend Developer 2025</h3>
+        <p>Acknowledged as top frontend developer by Tech Society.</p>
+      </div>
+      <div class="achievement-box">
+       
+        <h3>React Certification</h3>
+        <p>Advanced React certification from Meta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+         
+          <p>akshat2410184@akgec.ac.in</p>
+        </div>
+        <div class="contact-item">
+         
+          <p>+91 9839929895</p>
+        </div>
+        <div class="contact-item">
+          
+          <p>Kanpur, Uttar Pradesh</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="social-links">
+      <a href="https://www.instagram.com/akshat23yash
+"><img src="insta.svg" height="55px" width="55px"></a>
+      <a href="https://www.linkedin.com/in/akshat-sharma-156194344
+"><img src="linked.svg" height="40px" width="40px"></a>
+      <a href="https://github.com/akshat23yash15-creator
+"><img src="git.svg"></a>
+      
+    </div>
+    <p>&copy; 2025 Akshat Sharma. All Rights Reserved.</p>
+  </footer>
+
+     <script>
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.innerHTML = navLinks.classList.contains('active') ?
+        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+
+    
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    }); 
+
+    // Form submission
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      contactForm.reset();
+    });
+  </script> 
+</body>
+
+</html>
