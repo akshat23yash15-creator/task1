@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Frontend Developer Portfolio</title>
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("TXNu9ptMHB8CVhcj0");
+  </script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
- 
   <nav class="navbar">
     <a href="#" class="logo">MyPortfolio</a>
     <ul class="nav-links">
@@ -20,7 +22,6 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
 
   <section id="home">
     <div class="home-content">
@@ -33,60 +34,54 @@
 ➡️My age:- 20yrs.
 
 ➡️Email:-akshat2410184@akgec.ac.in
-        
       </pre>
       <a href="#contact" class="btn">Get In Touch</a>
     </div>
     <div class="profile-img">
-      <img src="portimg.jpg" alt="Profile Photo">
+      <img src="portimg.jpg" alt="Profile Photo" />
     </div>
   </section>
 
- 
   <section id="skills">
     <h2 class="section-title">My Skills</h2>
     <div class="skills-container">
       <div class="skill-box">
-        
         <h3>⌨️HTML</h3>
         <p>Semantic markup, accessibility, and modern HTML features.</p>
       </div>
       <div class="skill-box">
-        <i class="fab fa-css3-alt"></i>
         <h3>⌨️CSS</h3>
         <p>Responsive design, Flexbox, Grid, and CSS animations.</p>
       </div>
       <div class="skill-box">
-        <i class="fab fa-js"></i>
         <h3>⌨️JavaScript</h3>
-        <p>ES6+, DOM manipulation, and modern JS frameworks.</p>
+        <p>I am just a beginner in this feild </p>
       </div>
       <div class="skill-box">
-        <i class="fab fa-react"></i>
-        <h3>⌨️React</h3>
-        <p>Component-based architecture, hooks, and state management.</p>
+        <h3>Leadership Qualities</h3>
+        <p>Communication, Decision-Making, and Motivation</p>
       </div>
+         <div class="skill-box">
+        <h3>Managerial Skills</h3>
+        <p>Planning, Organization, and Team Management.</p>
+      </div>
     </div>
   </section>
 
-  
   <section id="achievements">
     <h2 class="section-title">My Achievements</h2>
     <div class="achievements-container">
       <div class="achievement-box">
-       
         <h3>Award for Kho-Kho 2023</h3>
         <p>Received for getting first place in Inter School Competition and I was MVP from my team. </p>
       </div>
       <div class="achievement-box">
-       
         <h3>Frontend Developer 2025</h3>
         <p>Acknowledged as top frontend developer by Tech Society.</p>
       </div>
       <div class="achievement-box">
-       
-        <h3>React Certification</h3>
-        <p>Advanced React certification from Meta.</p>
+        <h3>E-sports Winner (2022)</h3>
+        <p>Won Second Prize in T2 Scrims.</p>
       </div>
     </div>
   </section>
@@ -96,51 +91,41 @@
     <div class="contact-container">
       <div class="contact-info">
         <div class="contact-item">
-         
           <p>akshat2410184@akgec.ac.in</p>
         </div>
+       
         <div class="contact-item">
-         
-          <p>+91 9839929895</p>
-        </div>
-        <div class="contact-item">
-          
           <p>Kanpur, Uttar Pradesh</p>
         </div>
       </div>
-      <form class="contact-form">
+
+    
+      <form id="contact-form" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" required>
+
+          <input type="text" id="name" name="from_name" placeholder="Your Name" required />
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="email" id="email" name="from_email" placeholder="Your Email" required />
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" placeholder="Your Message" required></textarea>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
-  
   <footer>
     <div class="social-links">
-      <a href="https://www.instagram.com/akshat23yash
-"><img src="insta.svg" height="55px" width="55px"></a>
-      <a href="https://www.linkedin.com/in/akshat-sharma-156194344
-"><img src="linked.svg" height="40px" width="40px"></a>
-      <a href="https://github.com/akshat23yash15-creator
-"><img src="git.svg"></a>
-      
+      <a href="https://www.instagram.com/akshat23yash"><img src="insta.svg" height="55" width="55" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/akshat-sharma-156194344"><img src="linked.svg" height="40" width="40" alt="LinkedIn" /></a>
+      <a href="https://github.com/akshat23yash15-creator"><img src="git.svg" alt="GitHub" /></a>
     </div>
     <p>&copy; 2025 Akshat Sharma. All Rights Reserved.</p>
   </footer>
-
-   
 </body>
-
 </html>
