@@ -10,7 +10,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #000000, #2d2d2d);
+      background: linear-gradient(to right, #000000, #2d2d2d);
       color: #fff;
       line-height: 1.6;
       overflow-x: hidden;
@@ -280,6 +280,7 @@
       background: rgba(255, 255, 255, 0.1);
       color: #fff;
       font-size: 1rem;
+      resize: none;
     }
 
     .form-group textarea {
@@ -308,8 +309,6 @@
       height: 55px;
       border-radius: 50%;
       background: rgba(0, 0, 0, 0.8);
-      /* color: #fff;
-      font-size: 1.2rem; */
       transition: all .3s ease; 
     }
 
@@ -372,7 +371,7 @@
       .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        left: 100%;
         height: 100vh;
         width: 70%;
         flex-direction: column;
@@ -431,6 +430,8 @@
         padding: 1.5rem;
       }
     }
-    textarea{
-      resize: none;
-    }
+  .ak:hover{
+    color: #0288d1;
+    background: #fff;
+    transform: scale(1.1);
+  }
