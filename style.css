@@ -10,10 +10,11 @@
     }
 
     body {
-      background: linear-gradient(to right, #000000, #2d2d2d);
+      background: linear-gradient(to right, #0f0f0f, #1a1a2e, #16213e);
       color: #fff;
       line-height: 1.6;
       overflow-x: hidden;
+      
     }
 
     .navbar {
@@ -181,17 +182,26 @@
 
     .skills-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+      
+
+
+    
       gap: 2rem;
     }
 
     .skill-box {
-      background: rgba(30, 30, 30, 0.7);
+     background: rgba(30, 30, 30, 0.7);
       padding: 2rem;
       border-radius: 10px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border-top: 3px solid transparent;
+      background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)) padding-box,
+                  linear-gradient(135deg, #0288d1, #4fc3f7) border-box;
+      
     }
 
     .skill-box:hover {
@@ -217,12 +227,15 @@
     }
 
     .achievement-box {
-      background: rgba(30, 30, 30, 0.7);
+       background: rgba(30, 30, 30, 0.7);
       padding: 2rem;
       border-radius: 10px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border-top: 3px solid transparent;
+      background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)) padding-box,
+                  linear-gradient(135deg, #0288d1, #4fc3f7) border-box;
     }
 
     .achievement-box:hover {
@@ -250,9 +263,14 @@
     }
 
     .contact-item {
-      display: flex;
+      margin-top: 35px;
+            display: flex;
       align-items: center;
       gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid #4fc3f7;
     }
 
 
@@ -408,6 +426,9 @@
     }
 
     @media (max-width: 576px) {
+        /* body{
+          padding: 10 10 10 10;
+        } */
       section {
         padding: 4rem 5%;
       }
