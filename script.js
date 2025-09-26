@@ -26,3 +26,26 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+const themeBtn = document.getElementById('theme-btn');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  document.body.classList.add(savedTheme);
+  themeBtn.textContent = savedTheme === 'light-theme' ? '🌙 Theme' : '☀️ Theme';
+}
+
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');  
+
+  
+  if (document.body.classList.contains('light-theme')) {
+    themeBtn.textContent = '☀️ Theme';
+    localStorage.setItem('theme', 'light-theme');
+  } else {
+    themeBtn.textContent = '🌙 Theme';
+    localStorage.setItem('theme', '');
+  }
+});
+
+
+
