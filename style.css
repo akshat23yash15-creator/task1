@@ -450,7 +450,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: 3px solid rgba(32, 166, 228, 0.5);
+  /* outline: 3px solid rgba(212, 60, 228, 0.5); */
   box-shadow: 0 0 20px rgba(32, 166, 228, 0.5);
  
 }
