@@ -47,5 +47,16 @@ themeBtn.addEventListener('click', () => {
   }
 });
 
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
 
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
+navLinkItems.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
