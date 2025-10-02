@@ -81,6 +81,14 @@
   .nav-links a:hover::after {
     width: 100%;
   }
+   #hamburger {
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
   section {
     padding: 5rem 7%;
